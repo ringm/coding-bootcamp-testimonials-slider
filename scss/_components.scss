@@ -1,4 +1,17 @@
 .testimonial {
+
+  &__bg-pattern-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: contain;
+    width: 100vw;
+
+    @media only screen and (min-width: $bp-lg) {
+      width: 55vw;
+    }
+  }
+
   //IMAGE
 
   &__img-container {
