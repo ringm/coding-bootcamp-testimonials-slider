@@ -1,0 +1,172 @@
+.testimonial {
+  //IMAGE
+
+  &__img-container {
+    background-image: url(../images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: .3s;
+    animation-fill-mode: both;
+
+    @media only screen and (min-width: $bp-lg) {
+      margin-left: -8rem;
+      align-items: flex-start;
+    }
+  }
+
+  &__img {
+    border-radius: 10px;
+    width: 85%;
+    box-shadow: 0 0.5rem 4rem rgba($color-primary, 0.2);
+    animation: moveLeft 1s .3s both;
+    /*animation-duration: 1s;
+    animation-delay: .3s;
+    animation-fill-mode: both;*/
+  }
+
+  //BUTTONS
+
+  &__btn-container {
+    background-color: white;
+    padding: 1.5rem 1.8rem;
+    border-radius: 200px;
+    box-shadow: 0 0.5rem 4rem rgba($color-primary, 0.4);
+    margin-top: -2.5rem;
+    display: flex;
+    position: relative;
+    z-index: 5;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
+    @media only screen and (min-width: $bp-lg) {
+      margin-left: 4rem;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    cursor: pointer;
+    outline: none;
+    transform: scale(1);
+    transition: transform .2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__btn--next {
+    margin-left: 3rem;
+  }
+
+
+  //TEXT
+
+  &__txt-container {
+    background-image: url(../images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 12vw;
+    background-position: top;
+    color: $color-primary;
+    text-align: center;
+    animation-name: fadeIn, moveUpBG;
+    animation-duration: 1s, 1s;
+    animation-delay: .5s, .5s;
+    animation-fill-mode: both, both;
+    backface-visibility: hidden;
+
+    @media only screen and (min-width: $bp-lg) {
+      order: -1;
+      text-align: left;
+      position: relative;
+      z-index: 5;
+      background-size: 100px;
+      background-position: 5% 25%;
+      display: grid;
+      align-content: center;
+      animation-name: fadeIn, moveLeftBG;
+    }
+  }
+
+  &__testimony {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    animation-name: moveUp;
+    animation-duration: 1s;
+    animation-delay: .3s;
+    animation-fill-mode: both;
+
+
+    @media only screen and (min-width: $bp-lg) {
+      font-size: $font-fluid;
+    }
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: $bp-lg) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 1.6rem;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: .8s;
+    animation-fill-mode: both;
+
+    @media only screen and (min-width: $bp-lg) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__profession {
+    color: $color-secondary;
+    backface-visibility: hidden;
+    font-size: 1.4rem;
+    animation-name: fadeIn, moveRight;
+    animation-duration: .6s, .8s;
+    animation-delay: 1s, 1s;
+    animation-fill-mode: both, both;
+
+    @media only screen and (min-width: $bp-lg) {
+      margin-left: 2rem;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 1.8s;
+  animation-fill-mode: both;
+
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  & a:hover {
+    color: $color-primary;
+  }
+}

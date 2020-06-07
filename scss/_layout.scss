@@ -1,0 +1,28 @@
+.container {
+  width: min(90%, 1440px);
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: [margin-top-start] 1fr [margin-top-end testimonial-start] auto [testimonial-end attribution-start] auto [attribution-end margin-bottom-start] 1fr [margin-bottom-end];
+}
+
+.testimonial {
+  grid-row: testimonial-start / testimonial-end;
+  display: grid;
+  width: min(100%, 500px);
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @media only screen and (min-width: $bp-lg) {
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 1.2fr 1fr;
+    width: 100%;
+  }
+}
+
+.attribution {
+  grid-row: attribution-start / attribution-end;
+}
