@@ -33,8 +33,8 @@ function next() {
   name.textContent = testimonies[counter].name;
   profession.textContent = testimonies[counter].job;
 
-  img.style.animation = 'fadeIn 1s both, moveLeft 1s both';
-  testimony.style.animation = 'fadeIn 1s both, moveUp 1s both';
+  img.style.animation = 'fadeIn 1s .3s both, moveLeft 1s .3s both';
+  testimony.style.animation = 'fadeIn 1s .2s both, moveUp 1s .2s both';
   name.style.animation = 'fadeIn 1s .4s both';
   profession.style.animation = 'fadeIn 1s .5s both, moveRight 1s .5s both';
 }

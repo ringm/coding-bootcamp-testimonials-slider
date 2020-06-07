@@ -153,9 +153,6 @@ a {
   width: 85%;
   box-shadow: 0 0.5rem 4rem rgba(32, 32, 70, 0.2);
   animation: moveLeft 1s 0.3s both;
-  /*animation-duration: 1s;
-  animation-delay: .3s;
-  animation-fill-mode: both;*/
 }
 .testimonial__btn-container {
   background-color: white;
